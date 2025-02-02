@@ -1,0 +1,36 @@
+.main_header {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 20px;
+  background: linear-gradient(135deg, #3498db, #2980b9);
+  color: #ecf0f1;
+  text-align: center;
+  font-family: 'Arial', sans-serif;
+  border-bottom: 4px solid #2c3e50;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+
+  h2 {
+    margin: 0;
+    font-size: 28px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    animation: fadeIn 1s ease-in-out;
+
+    &:hover {
+      color: #5f11bf;
+      transition: color 0.3s ease;
+    }
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

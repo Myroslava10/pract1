@@ -1,0 +1,43 @@
+$paletteWidth: 16.5em;
+
+.palette {
+  width: $paletteWidth;
+  padding: 0.5em;
+  background-color: white;
+  border-radius: 0.2em;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); // Тінь для ефекту "підняття"
+  transition: transform 0.3s ease, box-shadow 0.3s ease; // Плавний перехід
+  cursor: pointer;
+
+  .colors {
+    display: flex;
+    flex-wrap: wrap;
+
+    .color {
+      width: calc($paletteWidth / 5);
+      height: 3em;
+      transition: transform 0.3s ease; // Анімація для кольорів
+
+      &:hover {
+        transform: scale(1.1); // Збільшення кольору при наведенні
+      }
+    }
+  }
+
+  footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1em;
+
+    h5 {
+      margin: 0;
+      font-size: 1em;
+      color: #2c3e50; // Темний колір тексту
+    }
+
+    span {
+      font-size: 1.2em;
+    }
+  }
+}
